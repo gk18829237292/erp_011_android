@@ -1,7 +1,6 @@
-package com.gk.erp
+package com.gk.erp.ui
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.support.v7.app.AppCompatActivity
 
 /**
@@ -11,6 +10,9 @@ abstract class BaseActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        initView();
+        initData();
     }
 
     abstract fun initView();
